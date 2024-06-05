@@ -1,0 +1,370 @@
+/* Add this to your existing CSS */
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the end (right side) */
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 2em; /* Increase the font size */
+    font-weight: bold;
+    margin-right: auto; /* Push the logo to the right as much as possible */
+    margin-left: 20px; /* Add some space to the left of the logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.2em; /* Increase font size */
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+#hero h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+#hero button {
+    padding: 15px 25px;
+    font-size: 1.1em;
+    background: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+#hero button:hover {
+    background: #2575fc;
+    color: #fff;
+}
+
+/* Key Problems Solved Section */
+#key-problems {
+    padding: 60px 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+#key-problems h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+#key-problems .problems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#key-problems .problem-item {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #ffffff;
+}
+
+#key-problems .problem-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Key Metrics Section */
+#key-metrics {
+    padding: 60px 0;
+    background: #e9f5ff;
+    color: #333;
+}
+
+#key-metrics h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+#key-metrics .metrics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#key-metrics .metric-item {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#key-metrics .metric-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+#key-metrics .metric-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* Reviews Section */
+#reviews {
+    padding: 60px 0;
+    background: #fff5e6;
+    color: #333;
+}
+
+#reviews h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+#reviews .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#reviews .review-item {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#reviews .review-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Problem Target Section */
+#problem-target {
+    padding: 60px 0;
+    background: #e6ffe6;
+    color: #333;
+}
+
+#problem-target h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+#problem-target .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#problem-target .feature-item {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#problem-target .feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+#cta {
+    background: linear-gradient(to right, #ff7e5f, #2557fc);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#cta h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+#cta button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+#cta button:hover {
+    background: #feb47b;
+    color: #fff;
+}
+
+/* Footer Section */
+footer {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+footer p, footer address {
+    margin-bottom: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-content .modal-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.modal-content .modal-btn:hover {
+    background: #6a11cb;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #key-problems .problems,
+    #key-metrics .metrics,
+    #reviews .reviews,
+    #problem-target .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
